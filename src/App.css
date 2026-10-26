@@ -1,0 +1,115 @@
+.app {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 12px 12px 20px;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hud h1 {
+  font-size: 1.25rem;
+  margin: 4px 0 8px;
+  text-align: center;
+}
+
+.hud-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 0 4px 8px;
+}
+
+.field {
+  position: relative;
+  flex: 1;
+  min-height: 480px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #241448 0%, #3a1c66 70%, #4a2566 100%);
+  overflow: hidden;
+  touch-action: none;
+  user-select: none;
+}
+
+.moon {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  font-size: 2rem;
+  opacity: 0.9;
+}
+
+.falling {
+  position: absolute;
+  line-height: 1;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.basket {
+  position: absolute;
+  bottom: 14px;
+  width: 84px;
+  text-align: center;
+  font-size: 52px;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.ground {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 10px;
+  background: #120826;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(14, 6, 32, 0.72);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  gap: 10px;
+}
+
+.overlay-title {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.overlay-text {
+  margin: 0;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.start-btn {
+  margin-top: 8px;
+  font-size: 1.05rem;
+  font-weight: 800;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 999px;
+  background: #ff8c1a;
+  color: #2a1503;
+  cursor: pointer;
+}
+
+.start-btn:active {
+  transform: scale(0.97);
+}
+
+.hint {
+  text-align: center;
+  font-size: 0.85rem;
+  opacity: 0.85;
+  margin: 10px 0 0;
+}
